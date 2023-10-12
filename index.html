@@ -3,13 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FAQ | Frequently Asked Questions</title>
 
-    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS Path -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
-    <div class="container">
+    <header>
+      <h1>
+        <p>Hey name,</p>
+        Need some help?
+      </h1>
+      <div class="search-container">
+        <input
+          class="search"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="What do you wanna know?"
+        />
+        <svg
+          class="search-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <svg
+          class="search-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="4" y1="21" x2="4" y2="14"></line>
+          <line x1="4" y1="10" x2="4" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12" y2="3"></line>
+          <line x1="20" y1="21" x2="20" y2="16"></line>
+          <line x1="20" y1="12" x2="20" y2="3"></line>
+          <line x1="1" y1="14" x2="7" y2="14"></line>
+          <line x1="9" y1="8" x2="15" y2="8"></line>
+          <line x1="17" y1="16" x2="23" y2="16"></line>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <section class="side-sec">
+        <ul class="category-list">
+          <li class="category">category 1</li>
+          <li class="category">category 2</li>
+          <li class="category">category 3</li>
+          <li class="category">category 4</li>
+          <li class="category">category 5</li>
+        </ul>
+      </section>
+      <section class="main-sec">
+        <details class="question">
+          <summary>Question 1</summary>
+          <div class="answer">
+            <p class="answer-text">Content for 1</p>
+          </div>
+        </details>
+        <details class="question">
+          <summary>Question 2</summary>
+          <div class="answer">
+            <p class="answer-text">Content for 2</p>
+          </div>
+        </details>
+        <details class="question">
+          <summary>Question 3</summary>
+          <div class="answer">
+            <p class="answer-text">Content for 3</p>
+          </div>
+        </details>
+        <details class="question">
+          <summary>Question 4</summary>
+          <div class="answer">
+            <p class="answer-text">Content for 4</p>
+          </div>
+        </details>
+        <details class="question">
+          <summary>Question 5</summary>
+          <div class="answer">
+            <p class="answer-text">Content for 5</p>
+          </div>
+        </details>
+      </section>
+    </main>
+    <!-- <div class="container">
       <input
+        
         type="text"
         id="search"
         placeholder="Search for a question..."
@@ -153,7 +250,7 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="main.js"></script>
   </body>

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap");
+
+$header-text: white;
+$text-color: #898888;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1 {
+  font-size: 2.4em;
+  text-transform: uppercase;
+  position: relative;
+  height: fit-content;
+}
+
+h1 p {
+  position: absolute;
+  top: -0.8em;
+  font-size: 0.5em;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.search-container {
+  width: fit-content;
+  position: relative;
+  margin: 2em auto 0em auto;
+}
+
+input[type="text"] {
+  padding: 1em 2em;
+  border-radius: 2em;
+  border: none;
+  width: 30em;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  background-color: rgb(248, 248, 248);
+}
+
+.search-icon {
+  stroke: $text-color;
+  position: absolute;
+  top: calc(50% / 2);
+  right: 0.8em;
+}
+
+.search-icon:hover {
+  stroke: #343434;
+  cursor: pointer;
+}
+
+.search-icon:first-of-type {
+  right: 3em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.wallpaperscraft.com/image/single/laptop_cup_glasses_114948_1920x1080.jpg")
+    center;
+  background-size: cover;
+  color: $header-text;
+  padding: 3em;
+}
+
+main {
+  display: flex;
+}
+
+.side-sec {
+  flex-basis: 18%;
+}
+
+.category-list {
+  gap: 1em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text-color;
+}
+
+.category:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.main-sec {
+  flex-basis: 82%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.question {
+  border: 2px solid $text-color;
+  border-radius: 0.2em;
+  padding: 0.4em;
+}
